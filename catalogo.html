@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <title>Catálogo - ZapatoFlex</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">ZapatoFlex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/catalogo.html">Catalogo</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" />
+                    <button class="btn btn-outline-success" type="button">Buscar</button>
+                    <a href="/carrito.html" class="cart-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                        <span id="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mensagen-envio">
+        <p>Envíos gratis por compras superiores a $299.900 🚚</p>
+    </div>
+
+    <section class="catalogo-header">
+        <h2>Catálogo Completo 👟</h2>
+        <p>Encuentra tu par ideal entre nuestra selección premium</p>
+    </section>
+
+    <section class="catalogo-filtros">
+        <button class="filtro-btn active">Todos</button>
+        <button class="filtro-btn">Nike</button>
+        <button class="filtro-btn">Adidas</button>
+        <button class="filtro-btn">Reebok</button>
+        <button class="filtro-btn">ASICS</button>
+    </section>
+
+    <section class="card-contenedor">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://nikeco.vtexassets.com/arquivos/ids/921603-500-500?v=638987311230730000"
+                class="card-img-top" alt="Nike Air Max">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Max Lifestyle</h5>
+                <p class="card-text">Sneakers con amortiguación Air y diseño moderno. Ideales para uso diario.</p>
+                <p class="fw-bold">$469.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="Nike Air Max Lifestyle" data-price="469900">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.asics.com.co/arquivos/ids/522470-280-280/1203A895_021_SR_RT_GLB.Webp"
+                class="card-img-top" alt="ASICS Running">
+            <div class="card-body">
+                <h5 class="card-title">ASICS Gel Running</h5>
+                <p class="card-text">Zapatillas para running con tecnología GEL de absorción de impactos.</p>
+                <p class="fw-bold">$429.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="ASICS Gel Running" data-price="429900">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://reebokcol.vtexassets.com/arquivos/ids/1282984-500-auto?v=639046109999800000&width=500&height=auto&aspect=true"
+                class="card-img-top" alt="Reebok Classic">
+            <div class="card-body">
+                <h5 class="card-title">Reebok Classic Urban</h5>
+                <p class="card-text">Diseño clásico retro de Reebok. Perfectas para un look casual y cómodo.</p>
+                <p class="fw-bold">$349.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="Reebok Classic Urban" data-price="349900">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/5943490_EVERYDAY_RUNNING_FW_25_LAM_DAT_ONSITE_IWP_CARD_D_640x480_fd748dd407.jpg"
+                class="card-img-top" alt="Adidas Ultraboost">
+            <div class="card-body">
+                <h5 class="card-title">Adidas Ultraboost 5</h5>
+                <p class="card-text">Máxima amortiguación con tecnología Boost. Para correr más lejos y más cómodo.</p>
+                <p class="fw-bold">$589.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="Adidas Ultraboost 5" data-price="589900">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsh5wA41M2dCYoUyzvPO_w5I16mgS4Dl7RZA&s"
+                class="card-img-top" alt="Nike Free Run"
+                onerror="this.src='https://via.placeholder.com/500x400/f0f0eb/333?text=Nike+Free+Run'">
+            <div class="card-body">
+                <h5 class="card-title">Nike Free Run 5.0</h5>
+                <p class="card-text">Suela flexible que imita el movimiento natural del pie. Ligeras y versátiles.</p>
+                <p class="fw-bold">$389.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="Nike Free Run 5.0" data-price="389900">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/5643ea9848e94c1da869fd176bd19128_faec/Tenis_Superstar_Blanco_IH8659_db01_00_standard.tiff.jpg"
+                class="card-img-top" alt="Adidas Superstar"
+                onerror="this.src='https://via.placeholder.com/500x400/f0f0eb/333?text=Adidas+Superstar'">
+            <div class="card-body">
+                <h5 class="card-title">Adidas Superstar OG</h5>
+                <p class="card-text">El ícono de la calle. Cuero premium y la clásica punta de concha que nunca pasa de moda.</p>
+                <p class="fw-bold">$319.900</p>
+                <a href="#" class="btn btn-dark add-to-cart" data-name="Adidas Superstar OG" data-price="319900">Agregar al carrito</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-dark text-light mt-5 pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>ZapatoFlex</h5>
+                    <p>Encuentra los mejores sneakers y zapatos deportivos al mejor precio.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="/catalogo.html" class="text-light text-decoration-none">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p>Email: contacto@zapatoflex.com</p>
+                    <p>Tel: +57 300 000 0000</p>
+                    <p>Colombia</p>
+                </div>
+            </div>
+            <hr class="border-light">
+            <div class="text-center">
+                <p class="mb-0">© 2026 ZapatoFlex - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
